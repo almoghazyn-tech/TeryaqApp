@@ -30,12 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NearingExpiryDateMedicinesForm));
             this.NearingExpiryDateMedicinesDataGridView = new System.Windows.Forms.DataGridView();
-            this.BacktoAdminFormButton1 = new System.Windows.Forms.Button();
             this.medNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.medQuantityColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.expiryDateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.donorNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BacktoAdminFormButton1 = new System.Windows.Forms.Button();
+            this.LogoPictureBox14 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.NearingExpiryDateMedicinesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox14)).BeginInit();
             this.SuspendLayout();
             // 
             // NearingExpiryDateMedicinesDataGridView
@@ -49,27 +51,14 @@
             this.medQuantityColumn,
             this.expiryDateColumn,
             this.donorNameColumn});
-            this.NearingExpiryDateMedicinesDataGridView.Location = new System.Drawing.Point(2, 1);
+            this.NearingExpiryDateMedicinesDataGridView.Location = new System.Drawing.Point(12, 74);
             this.NearingExpiryDateMedicinesDataGridView.Name = "NearingExpiryDateMedicinesDataGridView";
             this.NearingExpiryDateMedicinesDataGridView.ReadOnly = true;
             this.NearingExpiryDateMedicinesDataGridView.RowHeadersWidth = 51;
             this.NearingExpiryDateMedicinesDataGridView.RowTemplate.Height = 24;
             this.NearingExpiryDateMedicinesDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.NearingExpiryDateMedicinesDataGridView.Size = new System.Drawing.Size(581, 389);
+            this.NearingExpiryDateMedicinesDataGridView.Size = new System.Drawing.Size(620, 346);
             this.NearingExpiryDateMedicinesDataGridView.TabIndex = 0;
-            // 
-            // BacktoAdminFormButton1
-            // 
-            this.BacktoAdminFormButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BacktoAdminFormButton1.BackColor = System.Drawing.Color.DarkOrange;
-            this.BacktoAdminFormButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BacktoAdminFormButton1.ForeColor = System.Drawing.Color.White;
-            this.BacktoAdminFormButton1.Location = new System.Drawing.Point(541, 412);
-            this.BacktoAdminFormButton1.Name = "BacktoAdminFormButton1";
-            this.BacktoAdminFormButton1.Size = new System.Drawing.Size(130, 40);
-            this.BacktoAdminFormButton1.TabIndex = 1;
-            this.BacktoAdminFormButton1.Text = "Back";
-            this.BacktoAdminFormButton1.UseVisualStyleBackColor = false;
             // 
             // medNameColumn
             // 
@@ -103,21 +92,47 @@
             this.donorNameColumn.ReadOnly = true;
             this.donorNameColumn.Width = 125;
             // 
+            // BacktoAdminFormButton1
+            // 
+            this.BacktoAdminFormButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BacktoAdminFormButton1.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.BacktoAdminFormButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BacktoAdminFormButton1.ForeColor = System.Drawing.Color.White;
+            this.BacktoAdminFormButton1.Location = new System.Drawing.Point(545, 426);
+            this.BacktoAdminFormButton1.Name = "BacktoAdminFormButton1";
+            this.BacktoAdminFormButton1.Size = new System.Drawing.Size(130, 40);
+            this.BacktoAdminFormButton1.TabIndex = 1;
+            this.BacktoAdminFormButton1.Text = "Back";
+            this.BacktoAdminFormButton1.UseVisualStyleBackColor = false;
+            // 
+            // LogoPictureBox14
+            // 
+            this.LogoPictureBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LogoPictureBox14.Image = global::TeryaqApp.Properties.Resources.favicon__1_;
+            this.LogoPictureBox14.Location = new System.Drawing.Point(561, -1);
+            this.LogoPictureBox14.Name = "LogoPictureBox14";
+            this.LogoPictureBox14.Size = new System.Drawing.Size(124, 69);
+            this.LogoPictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogoPictureBox14.TabIndex = 2;
+            this.LogoPictureBox14.TabStop = false;
+            // 
             // NearingExpiryDateMedicinesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(687, 478);
+            this.Controls.Add(this.LogoPictureBox14);
             this.Controls.Add(this.BacktoAdminFormButton1);
             this.Controls.Add(this.NearingExpiryDateMedicinesDataGridView);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "NearingExpiryDateMedicinesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Nearing Expiry Date Medicines";
             ((System.ComponentModel.ISupportInitialize)(this.NearingExpiryDateMedicinesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox14)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -130,5 +145,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn medQuantityColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn expiryDateColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn donorNameColumn;
+        private System.Windows.Forms.PictureBox LogoPictureBox14;
     }
 }

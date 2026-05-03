@@ -21,5 +21,10 @@ namespace TeryaqApp
         {
 
         }
+
+        private void DonateForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
