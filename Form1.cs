@@ -36,7 +36,7 @@ namespace TeryaqApp
 
         private void SignUpButton_Click(object sender, EventArgs e)
         {
-            SignUpForm1 signup1 = new SignUpForm1();
+            SignUpForm signup1 = new SignUpForm();
             signup1.ShowDialog();
         }
     }

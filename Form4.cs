@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TeryaqApp
 {
-    public partial class SignUpForm2 : Form
+    public partial class SignUpForm : Form
     {
-        public SignUpForm2()
+        public SignUpForm()
         {
             InitializeComponent();
         }
@@ -29,8 +29,13 @@ namespace TeryaqApp
 
         private void NextButton2_Click(object sender, EventArgs e)
         {
-            SignUpForm3 signup3 = new SignUpForm3();
-            signup3.ShowDialog();
+            HomeScreen homescreen = new HomeScreen();
+           homescreen.ShowDialog();
+        }
+
+        private void EmailLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

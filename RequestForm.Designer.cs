@@ -31,13 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RequestForm));
             this.SearchTextBox = new System.Windows.Forms.TextBox();
             this.AvailableMedincineDataGridView1 = new System.Windows.Forms.DataGridView();
+            this.LogoPictureBox8 = new System.Windows.Forms.PictureBox();
+            this.BackButton = new System.Windows.Forms.Button();
+            this.CompleteButton = new System.Windows.Forms.Button();
             this.MedicineNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MedicineFormColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MedicineTypeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MedicineQuantityColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.donorNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GovernorateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ShowdetailsButton = new System.Windows.Forms.Button();
-            this.LogoPictureBox8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.AvailableMedincineDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox8)).BeginInit();
             this.SuspendLayout();
@@ -62,7 +63,7 @@
             this.AvailableMedincineDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.AvailableMedincineDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MedicineNameColumn,
-            this.MedicineFormColumn,
+            this.MedicineTypeColumn,
             this.MedicineQuantityColumn,
             this.donorNameColumn,
             this.GovernorateColumn});
@@ -76,6 +77,43 @@
             this.AvailableMedincineDataGridView1.TabIndex = 1;
             this.AvailableMedincineDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // LogoPictureBox8
+            // 
+            this.LogoPictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LogoPictureBox8.Image = global::TeryaqApp.Properties.Resources.favicon__1_;
+            this.LogoPictureBox8.Location = new System.Drawing.Point(626, -1);
+            this.LogoPictureBox8.Name = "LogoPictureBox8";
+            this.LogoPictureBox8.Size = new System.Drawing.Size(138, 72);
+            this.LogoPictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogoPictureBox8.TabIndex = 3;
+            this.LogoPictureBox8.TabStop = false;
+            // 
+            // BackButton
+            // 
+            this.BackButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BackButton.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.BackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButton.ForeColor = System.Drawing.Color.White;
+            this.BackButton.Location = new System.Drawing.Point(502, 344);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(118, 43);
+            this.BackButton.TabIndex = 7;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = false;
+            // 
+            // CompleteButton
+            // 
+            this.CompleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.CompleteButton.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.CompleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CompleteButton.ForeColor = System.Drawing.Color.White;
+            this.CompleteButton.Location = new System.Drawing.Point(626, 344);
+            this.CompleteButton.Name = "CompleteButton";
+            this.CompleteButton.Size = new System.Drawing.Size(118, 43);
+            this.CompleteButton.TabIndex = 6;
+            this.CompleteButton.Text = "Complete";
+            this.CompleteButton.UseVisualStyleBackColor = false;
+            // 
             // MedicineNameColumn
             // 
             this.MedicineNameColumn.HeaderText = "Medicine Name";
@@ -84,13 +122,13 @@
             this.MedicineNameColumn.ReadOnly = true;
             this.MedicineNameColumn.Width = 125;
             // 
-            // MedicineFormColumn
+            // MedicineTypeColumn
             // 
-            this.MedicineFormColumn.HeaderText = "Medicine Form";
-            this.MedicineFormColumn.MinimumWidth = 6;
-            this.MedicineFormColumn.Name = "MedicineFormColumn";
-            this.MedicineFormColumn.ReadOnly = true;
-            this.MedicineFormColumn.Width = 125;
+            this.MedicineTypeColumn.HeaderText = "Medicine Type";
+            this.MedicineTypeColumn.MinimumWidth = 6;
+            this.MedicineTypeColumn.Name = "MedicineTypeColumn";
+            this.MedicineTypeColumn.ReadOnly = true;
+            this.MedicineTypeColumn.Width = 125;
             // 
             // MedicineQuantityColumn
             // 
@@ -116,39 +154,15 @@
             this.GovernorateColumn.ReadOnly = true;
             this.GovernorateColumn.Width = 125;
             // 
-            // ShowdetailsButton
-            // 
-            this.ShowdetailsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ShowdetailsButton.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.ShowdetailsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowdetailsButton.ForeColor = System.Drawing.Color.White;
-            this.ShowdetailsButton.Location = new System.Drawing.Point(564, 339);
-            this.ShowdetailsButton.Name = "ShowdetailsButton";
-            this.ShowdetailsButton.Size = new System.Drawing.Size(188, 48);
-            this.ShowdetailsButton.TabIndex = 2;
-            this.ShowdetailsButton.Text = "Show details";
-            this.ShowdetailsButton.UseVisualStyleBackColor = false;
-            this.ShowdetailsButton.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // LogoPictureBox8
-            // 
-            this.LogoPictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LogoPictureBox8.Image = global::TeryaqApp.Properties.Resources.favicon__1_;
-            this.LogoPictureBox8.Location = new System.Drawing.Point(626, -1);
-            this.LogoPictureBox8.Name = "LogoPictureBox8";
-            this.LogoPictureBox8.Size = new System.Drawing.Size(138, 72);
-            this.LogoPictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LogoPictureBox8.TabIndex = 3;
-            this.LogoPictureBox8.TabStop = false;
-            // 
             // RequestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(764, 399);
+            this.Controls.Add(this.BackButton);
+            this.Controls.Add(this.CompleteButton);
             this.Controls.Add(this.LogoPictureBox8);
-            this.Controls.Add(this.ShowdetailsButton);
             this.Controls.Add(this.AvailableMedincineDataGridView1);
             this.Controls.Add(this.SearchTextBox);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -168,12 +182,13 @@
         #endregion
         private System.Windows.Forms.TextBox SearchTextBox;
         private System.Windows.Forms.DataGridView AvailableMedincineDataGridView1;
-        private System.Windows.Forms.Button ShowdetailsButton;
+        private System.Windows.Forms.PictureBox LogoPictureBox8;
+        private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.Button CompleteButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn MedicineNameColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MedicineFormColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MedicineTypeColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn MedicineQuantityColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn donorNameColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn GovernorateColumn;
-        private System.Windows.Forms.PictureBox LogoPictureBox8;
     }
 }

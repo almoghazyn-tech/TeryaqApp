@@ -47,8 +47,7 @@ namespace TeryaqApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MedicineDetailsForm medicinedetails = new MedicineDetailsForm();
-            medicinedetails.ShowDialog();
+          
         }
 
         private void RequestForm_Load(object sender, EventArgs e)

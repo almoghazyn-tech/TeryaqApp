@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewMedicinesForm));
             this.NewMedicinesDataGridView = new System.Windows.Forms.DataGridView();
-            this.medicinenameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.medicineformColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.donornameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.medicinenameEditButton = new System.Windows.Forms.Button();
             this.LogoPictureBox13 = new System.Windows.Forms.PictureBox();
+            this.medicinenameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.medicinetypeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donornameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.NewMedicinesDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox13)).BeginInit();
             this.SuspendLayout();
@@ -47,9 +47,9 @@
             this.NewMedicinesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.NewMedicinesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.medicinenameColumn,
-            this.medicineformColumn,
+            this.medicinetypeColumn,
             this.donornameColumn});
-            this.NewMedicinesDataGridView.Location = new System.Drawing.Point(3, 57);
+            this.NewMedicinesDataGridView.Location = new System.Drawing.Point(12, 57);
             this.NewMedicinesDataGridView.Name = "NewMedicinesDataGridView";
             this.NewMedicinesDataGridView.ReadOnly = true;
             this.NewMedicinesDataGridView.RowHeadersWidth = 51;
@@ -57,30 +57,6 @@
             this.NewMedicinesDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.NewMedicinesDataGridView.Size = new System.Drawing.Size(493, 327);
             this.NewMedicinesDataGridView.TabIndex = 0;
-            // 
-            // medicinenameColumn
-            // 
-            this.medicinenameColumn.HeaderText = "Medicine Name";
-            this.medicinenameColumn.MinimumWidth = 6;
-            this.medicinenameColumn.Name = "medicinenameColumn";
-            this.medicinenameColumn.ReadOnly = true;
-            this.medicinenameColumn.Width = 125;
-            // 
-            // medicineformColumn
-            // 
-            this.medicineformColumn.HeaderText = "Medicine Form";
-            this.medicineformColumn.MinimumWidth = 6;
-            this.medicineformColumn.Name = "medicineformColumn";
-            this.medicineformColumn.ReadOnly = true;
-            this.medicineformColumn.Width = 125;
-            // 
-            // donornameColumn
-            // 
-            this.donornameColumn.HeaderText = "Donor Name";
-            this.donornameColumn.MinimumWidth = 6;
-            this.donornameColumn.Name = "donornameColumn";
-            this.donornameColumn.ReadOnly = true;
-            this.donornameColumn.Width = 125;
             // 
             // medicinenameEditButton
             // 
@@ -107,6 +83,30 @@
             this.LogoPictureBox13.TabIndex = 2;
             this.LogoPictureBox13.TabStop = false;
             // 
+            // medicinenameColumn
+            // 
+            this.medicinenameColumn.HeaderText = "Medicine Name";
+            this.medicinenameColumn.MinimumWidth = 6;
+            this.medicinenameColumn.Name = "medicinenameColumn";
+            this.medicinenameColumn.ReadOnly = true;
+            this.medicinenameColumn.Width = 125;
+            // 
+            // medicinetypeColumn
+            // 
+            this.medicinetypeColumn.HeaderText = "Medicine Type";
+            this.medicinetypeColumn.MinimumWidth = 6;
+            this.medicinetypeColumn.Name = "medicinetypeColumn";
+            this.medicinetypeColumn.ReadOnly = true;
+            this.medicinetypeColumn.Width = 125;
+            // 
+            // donornameColumn
+            // 
+            this.donornameColumn.HeaderText = "Donor Name";
+            this.donornameColumn.MinimumWidth = 6;
+            this.donornameColumn.Name = "donornameColumn";
+            this.donornameColumn.ReadOnly = true;
+            this.donornameColumn.Width = 125;
+            // 
             // NewMedicinesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -131,10 +131,10 @@
         #endregion
 
         private System.Windows.Forms.DataGridView NewMedicinesDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn medicinenameColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn medicineformColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn donornameColumn;
         private System.Windows.Forms.Button medicinenameEditButton;
         private System.Windows.Forms.PictureBox LogoPictureBox13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn medicinenameColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn medicinetypeColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donornameColumn;
     }
 }

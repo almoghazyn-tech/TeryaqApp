@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DonateForm));
             this.MedicineNameLabel = new System.Windows.Forms.Label();
             this.MedicineFormComboBox = new System.Windows.Forms.ComboBox();
-            this.MedicineFormLabel = new System.Windows.Forms.Label();
+            this.MedicineTypeLabel = new System.Windows.Forms.Label();
             this.MedicineQuantityLabel = new System.Windows.Forms.Label();
             this.ExpiryDateLabel = new System.Windows.Forms.Label();
             this.MedicineQuantityTextBox = new System.Windows.Forms.TextBox();
@@ -64,17 +64,17 @@
             this.MedicineFormComboBox.Size = new System.Drawing.Size(266, 28);
             this.MedicineFormComboBox.TabIndex = 2;
             // 
-            // MedicineFormLabel
+            // MedicineTypeLabel
             // 
-            this.MedicineFormLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.MedicineFormLabel.AutoSize = true;
-            this.MedicineFormLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MedicineFormLabel.ForeColor = System.Drawing.Color.Honeydew;
-            this.MedicineFormLabel.Location = new System.Drawing.Point(38, 130);
-            this.MedicineFormLabel.Name = "MedicineFormLabel";
-            this.MedicineFormLabel.Size = new System.Drawing.Size(154, 25);
-            this.MedicineFormLabel.TabIndex = 3;
-            this.MedicineFormLabel.Text = "Medicine Form";
+            this.MedicineTypeLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.MedicineTypeLabel.AutoSize = true;
+            this.MedicineTypeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MedicineTypeLabel.ForeColor = System.Drawing.Color.Honeydew;
+            this.MedicineTypeLabel.Location = new System.Drawing.Point(38, 130);
+            this.MedicineTypeLabel.Name = "MedicineTypeLabel";
+            this.MedicineTypeLabel.Size = new System.Drawing.Size(154, 25);
+            this.MedicineTypeLabel.TabIndex = 3;
+            this.MedicineTypeLabel.Text = "Medicine Type";
             // 
             // MedicineQuantityLabel
             // 
@@ -177,7 +177,7 @@
             this.Controls.Add(this.MedicineQuantityTextBox);
             this.Controls.Add(this.ExpiryDateLabel);
             this.Controls.Add(this.MedicineQuantityLabel);
-            this.Controls.Add(this.MedicineFormLabel);
+            this.Controls.Add(this.MedicineTypeLabel);
             this.Controls.Add(this.MedicineFormComboBox);
             this.Controls.Add(this.MedicineNameLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -197,7 +197,7 @@
 
         private System.Windows.Forms.Label MedicineNameLabel;
         private System.Windows.Forms.ComboBox MedicineFormComboBox;
-        private System.Windows.Forms.Label MedicineFormLabel;
+        private System.Windows.Forms.Label MedicineTypeLabel;
         private System.Windows.Forms.Label MedicineQuantityLabel;
         private System.Windows.Forms.Label ExpiryDateLabel;
         private System.Windows.Forms.TextBox MedicineQuantityTextBox;
